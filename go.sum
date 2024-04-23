@@ -152,6 +152,8 @@ k8s.io/utils v0.0.0-20231121161247-cf03d44ff3cf h1:iTzha1p7Fi83476ypNSz8nV9iR993
 k8s.io/utils v0.0.0-20231121161247-cf03d44ff3cf/go.mod h1:OLgZIPagt7ERELqWJFomSt595RzquPNLL48iOWgYOg0=
 k8s.io/utils v0.0.0-20231127182322-b307cd553661 h1:FepOBzJ0GXm8t0su67ln2wAZjbQ6RxQGZDnzuLcrUTI=
 k8s.io/utils v0.0.0-20231127182322-b307cd553661/go.mod h1:OLgZIPagt7ERELqWJFomSt595RzquPNLL48iOWgYOg0=
+k8s.io/utils v0.0.0-20240423183400-0849a56e8f22 h1:ao5hUqGhsqdm+bYbjH/pRkCs0unBGe9UyDahzs9zQzQ=
+k8s.io/utils v0.0.0-20240423183400-0849a56e8f22/go.mod h1:OLgZIPagt7ERELqWJFomSt595RzquPNLL48iOWgYOg0=
 lukechampine.com/uint128 v1.2.0 h1:mBi/5l91vocEN8otkC5bDLhi2KdCticRiwbdB0O+rjI=
 lukechampine.com/uint128 v1.2.0/go.mod h1:c4eWIwlEGaxC/+H1VguhU4PHXNWDCDMUlWdIWl2j1gk=
 modernc.org/cc/v3 v3.40.0 h1:P3g79IUS/93SYhtoeaHW+kRCIrYaxJ27MFPv+7kaTOw=
