@@ -7,7 +7,7 @@ require (
 	github.com/cheggaaa/pb/v3 v3.1.4
 	github.com/hashicorp/go-retryablehttp v0.7.7
 	github.com/spf13/cobra v1.8.1
-	github.com/stretchr/testify v1.8.4
+	github.com/stretchr/testify v1.9.0
 	golang.org/x/sync v0.8.0
 	golang.org/x/xerrors v0.0.0-20240903120638-7835f813f4da
 	k8s.io/utils v0.0.0-20240902221715-702e33fdd3c3
