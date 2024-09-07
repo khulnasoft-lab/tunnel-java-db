@@ -9,7 +9,7 @@ require (
 	github.com/spf13/cobra v1.8.0
 	github.com/stretchr/testify v1.8.4
 	golang.org/x/sync v0.8.0
-	golang.org/x/xerrors v0.0.0-20231012003039-104605ab7028
+	golang.org/x/xerrors v0.0.0-20240903120638-7835f813f4da
 	k8s.io/utils v0.0.0-20231127182322-b307cd553661
 	modernc.org/sqlite v1.27.0
 )
