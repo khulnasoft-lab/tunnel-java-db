@@ -7,7 +7,7 @@ require (
 	github.com/cheggaaa/pb/v3 v3.1.0
 	github.com/hashicorp/go-retryablehttp v0.7.7
 	github.com/samber/lo v1.39.0
-	github.com/spf13/cobra v1.6.1
+	github.com/spf13/cobra v1.8.1
 	github.com/stretchr/testify v1.8.1
 	golang.org/x/sync v0.9.0
 	golang.org/x/xerrors v0.0.0-20240903120638-7835f813f4da
@@ -23,7 +23,7 @@ require (
 	github.com/fatih/color v1.16.0 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/hashicorp/go-cleanhttp v0.5.2 // indirect
-	github.com/inconshreveable/mousetrap v1.0.1 // indirect
+	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/kballard/go-shellquote v0.0.0-20180428030007-95032a82bc51 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
