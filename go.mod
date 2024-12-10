@@ -11,7 +11,7 @@ require (
 	github.com/stretchr/testify v1.8.1
 	golang.org/x/sync v0.9.0
 	golang.org/x/xerrors v0.0.0-20240903120638-7835f813f4da
-	k8s.io/utils v0.0.0-20241104163129-6fe5fd82f078
+	k8s.io/utils v0.0.0-20241210054802-24370beab758
 	modernc.org/sqlite v1.20.3
 )
 
