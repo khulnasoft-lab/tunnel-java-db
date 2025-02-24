@@ -10,7 +10,7 @@ require (
 	github.com/hashicorp/go-retryablehttp v0.7.7
 	github.com/samber/lo v1.39.0
 	github.com/spf13/cobra v1.6.1
-	github.com/stretchr/testify v1.8.1
+	github.com/stretchr/testify v1.10.0
 	golang.org/x/sync v0.10.0
 	golang.org/x/xerrors v0.0.0-20240903120638-7835f813f4da
 	k8s.io/utils v0.0.0-20241104163129-6fe5fd82f078
