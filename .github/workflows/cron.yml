@@ -24,6 +24,18 @@ jobs:
           go-version-file: go.mod
         id: go
 
+      - name: Install oras
+        run: |
+          curl -LO https://github.com/oras-project/oras/releases/download/v1.2.0/oras_1.2.0_linux_amd64.tar.gz
+          tar -xvf ./oras_1.2.0_linux_amd64.tar.gz 
+
+      - name: Pull tunnel-java-db
+        run: |
+          mkdir -p ./cache/db
+          lowercase_repo=$(echo "${{ github.repository }}" | tr '[:upper:]' '[:lower:]')
+          ./oras pull "ghcr.io/${lowercase_repo}:${DB_VERSION}"
+          tar -xvf javadb.tar.gz -C ./cache/db
+
       - name: Build the binary
         run: make build
 
@@ -51,11 +63,6 @@ jobs:
           registry: ghcr.io
           username: ${{ env.GH_USER }}
           password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Install oras
-        run: |
-          curl -LO https://github.com/oras-project/oras/releases/download/v1.2.0/oras_1.2.0_linux_amd64.tar.gz
-          tar -xvf ./oras_1.2.0_linux_amd64.tar.gz          
 
       - name: Upload assets to registries
         run: |
