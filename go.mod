@@ -14,7 +14,7 @@ require (
 	golang.org/x/sync v0.10.0
 	golang.org/x/xerrors v0.0.0-20240903120638-7835f813f4da
 	k8s.io/utils v0.0.0-20241104163129-6fe5fd82f078
-	modernc.org/sqlite v1.35.0
+	modernc.org/sqlite v1.36.0
 )
 
 require (
