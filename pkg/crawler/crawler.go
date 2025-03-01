@@ -455,22 +455,4 @@ func versionFromSha1URL(artifactId, sha1URL string) string {
 	fileName := ss[len(ss)-1]
 	if !strings.HasPrefix(fileName, artifactId) {
 		return ""
-	}
-	return strings.TrimSuffix(strings.TrimPrefix(fileName, artifactId+"-"), ".jar.sha1")
-}
-
-// linkFromSelection returns the link from goquery.Selection.
-// There are times when maven breaks `text` - it removes part of the `text` and adds the suffix `...` (`.../` for dirs).
-// e.g. `<a href="v1.1.0-226-g847ecff2d8e26f249422247d7665fe15f07b1744/">v1.1.0-226-g847ecff2d8e26f249422247d7665fe15.../</a>`
-// In this case we should take `href`.
-// But we don't need to get `href` if the text isn't broken.
-// To avoid checking unnecessary links.
-// e.g. `<pre id="contents"><a href="https://repo.maven.apache.org/maven2/abbot/">../</a>`
-func linkFromSelection(selection *goquery.Selection) string {
-	link := selection.Text()
-	// maven uses `.../` suffix for dirs and `...` suffix for files.
-	if href, ok := selection.Attr("href"); ok && (strings.HasSuffix(link, ".../") || (strings.HasSuffix(link, "..."))) {
-		link = href
-	}
-	return link
-}
+	
