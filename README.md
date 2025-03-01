@@ -6,7 +6,7 @@
 The DB is used in Tunnel to discover information about `jars` without GAV inside them.
 
 ## Update interval
-Every Thursday in 00:00
+Every day at 00:00
 
 ## Download the java indexes database
 You can download the actual compiled database via [Tunnel](https://khulnasoft.github.io/tunnel/) or [Oras CLI](https://oras.land/cli/).
