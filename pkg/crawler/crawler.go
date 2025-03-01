@@ -50,9 +50,9 @@ func NewCrawler(opt Option) (Crawler, error) {
 	client := retryablehttp.NewClient()
 	client.RetryMax = 10
 	client.Logger = slog.Default()
-	client.RetryWaitMin = 1 * time.Minute
-	client.RetryWaitMax = 5 * time.Minute
-	client.Backoff = retryablehttp.LinearJitterBackoff
+	client.RetryWaitMin = 1 * time.Second
+	client.RetryWaitMax = 30 * time.Second
+	client.Backoff = retryablehttp.DefaultBackoff
 	client.ResponseLogHook = func(_ retryablehttp.Logger, resp *http.Response) {
 		if resp.StatusCode != http.StatusOK {
 			slog.Warn("Unexpected http response", slog.String("url", resp.Request.URL.String()), slog.String("status", resp.Status))
@@ -430,7 +430,15 @@ func (c *Crawler) httpGet(ctx context.Context, url string) (*http.Response, erro
 	if err != nil {
 		return nil, xerrors.Errorf("unable to create a HTTP request: %w", err)
 	}
-	resp, err := c.http.Do(req)
+
+	// Set up exponential backoff
+	client := retryablehttp.NewClient()
+	client.RetryMax = 5
+	client.RetryWaitMin = 1 * time.Second
+	client.RetryWaitMax = 30 * time.Second
+	client.Backoff = retryablehttp.DefaultBackoff
+
+	resp, err := client.Do(req)
 	if err != nil {
 		return nil, xerrors.Errorf("http error (%s): %w", url, err)
 	}
