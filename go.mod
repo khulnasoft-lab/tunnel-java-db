@@ -6,7 +6,7 @@ toolchain go1.24.0
 
 require (
 	github.com/PuerkitoBio/goquery v1.10.2
-	github.com/cheggaaa/pb/v3 v3.1.6
+	github.com/cheggaaa/pb/v3 v3.1.7
 	github.com/hashicorp/go-retryablehttp v0.7.7
 	github.com/samber/lo v1.39.0
 	github.com/spf13/cobra v1.6.1
@@ -14,7 +14,7 @@ require (
 	golang.org/x/sync v0.10.0
 	golang.org/x/xerrors v0.0.0-20240903120638-7835f813f4da
 	k8s.io/utils v0.0.0-20241104163129-6fe5fd82f078
-	modernc.org/sqlite v1.35.0
+	modernc.org/sqlite v1.36.0
 )
 
 require (
@@ -32,7 +32,7 @@ require (
 	github.com/ncruces/go-strftime v0.1.9 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/remyoudompheng/bigfft v0.0.0-20230129092748-24d4a6f8daec // indirect
-	github.com/rivo/uniseg v0.2.0 // indirect
+	github.com/rivo/uniseg v0.4.7 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	golang.org/x/exp v0.0.0-20230315142452-642cacee5cc0 // indirect
 	golang.org/x/net v0.35.0 // indirect
