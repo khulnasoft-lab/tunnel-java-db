@@ -1,6 +1,6 @@
 module github.com/khulnasoft-lab/tunnel-java-db
 
-go 1.23
+go 1.23.0
 
 toolchain go1.24.1
 
@@ -14,7 +14,7 @@ require (
 	golang.org/x/sync v0.10.0
 	golang.org/x/xerrors v0.0.0-20240903120638-7835f813f4da
 	k8s.io/utils v0.0.0-20241104163129-6fe5fd82f078
-	modernc.org/sqlite v1.36.0
+	modernc.org/sqlite v1.36.3
 )
 
 require (
@@ -36,7 +36,7 @@ require (
 	github.com/spf13/pflag v1.0.5 // indirect
 	golang.org/x/exp v0.0.0-20230315142452-642cacee5cc0 // indirect
 	golang.org/x/net v0.35.0 // indirect
-	golang.org/x/sys v0.30.0 // indirect
+	golang.org/x/sys v0.31.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	modernc.org/libc v1.61.13 // indirect
 	modernc.org/mathutil v1.7.1 // indirect
