@@ -1,11 +1,11 @@
 module github.com/khulnasoft-lab/tunnel-java-db
 
-go 1.23
+go 1.23.0
 
 toolchain go1.24.1
 
 require (
-	github.com/PuerkitoBio/goquery v1.10.2
+	github.com/PuerkitoBio/goquery v1.10.3
 	github.com/cheggaaa/pb/v3 v3.1.7
 	github.com/hashicorp/go-retryablehttp v0.7.7
 	github.com/samber/lo v1.39.0
@@ -35,8 +35,8 @@ require (
 	github.com/rivo/uniseg v0.4.7 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	golang.org/x/exp v0.0.0-20230315142452-642cacee5cc0 // indirect
-	golang.org/x/net v0.35.0 // indirect
-	golang.org/x/sys v0.30.0 // indirect
+	golang.org/x/net v0.39.0 // indirect
+	golang.org/x/sys v0.32.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	modernc.org/libc v1.61.13 // indirect
 	modernc.org/mathutil v1.7.1 // indirect
