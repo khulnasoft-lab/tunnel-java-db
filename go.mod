@@ -2,7 +2,7 @@ module github.com/khulnasoft-lab/tunnel-java-db
 
 go 1.23
 
-toolchain go1.24.1
+toolchain go1.24.5
 
 require (
 	github.com/PuerkitoBio/goquery v1.10.2
