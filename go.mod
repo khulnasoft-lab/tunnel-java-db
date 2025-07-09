@@ -1,6 +1,6 @@
 module github.com/khulnasoft-lab/tunnel-java-db
 
-go 1.23
+go 1.23.0
 
 toolchain go1.24.1
 
@@ -11,7 +11,7 @@ require (
 	github.com/samber/lo v1.39.0
 	github.com/spf13/cobra v1.6.1
 	github.com/stretchr/testify v1.8.1
-	golang.org/x/sync v0.10.0
+	golang.org/x/sync v0.16.0
 	golang.org/x/xerrors v0.0.0-20240903120638-7835f813f4da
 	k8s.io/utils v0.0.0-20241104163129-6fe5fd82f078
 	modernc.org/sqlite v1.36.0
