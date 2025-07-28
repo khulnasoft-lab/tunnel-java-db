@@ -7,7 +7,7 @@ toolchain go1.24.1
 require (
 	github.com/PuerkitoBio/goquery v1.10.2
 	github.com/cheggaaa/pb/v3 v3.1.7
-	github.com/hashicorp/go-retryablehttp v0.7.7
+	github.com/hashicorp/go-retryablehttp v0.7.8
 	github.com/samber/lo v1.39.0
 	github.com/spf13/cobra v1.6.1
 	github.com/stretchr/testify v1.8.1
